@@ -7,5 +7,7 @@ A ludum dare team of pals!
 ### Add your name below as you work on the project. You are appreciated!
 
 Arthur Hertz
+
 Christian Caldwell
+
 Nat Burke
