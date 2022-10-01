@@ -1,4 +1,4 @@
-extends Sprite
+extends Node2D
 
 export var tween_duration = 1.0
 
@@ -10,8 +10,6 @@ func _unhandled_input(event) -> void:
 func move_to_mouse() -> void:
 	var tween := create_tween()
 	tween.tween_property(self, "global_position", get_global_mouse_position(), tween_duration)
-		
-		
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
