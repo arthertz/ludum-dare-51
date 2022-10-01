@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="Alarm" type="Node2D"]
+position = Vector2( 74, -127 )
+
+[node name="Sprite" type="Sprite" parent="."]

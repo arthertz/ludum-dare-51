@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="Door" type="Node2D"]
+position = Vector2( 142, -74 )
+
+[node name="Sprite" type="Sprite" parent="."]
