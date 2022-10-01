@@ -11,3 +11,6 @@ Arthur Hertz
 Christian Caldwell
 
 Nat Burke
+
+### Starter Assets
+Godot Starter Project by Jason Lothamer
