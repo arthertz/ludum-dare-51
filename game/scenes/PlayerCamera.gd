@@ -1,7 +1,7 @@
 extends Camera2D
 
 
-var player 
+var tween_duration = 1
 
 
 func move_to_mouse() -> void:
