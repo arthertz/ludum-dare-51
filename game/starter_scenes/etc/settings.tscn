@@ -97,7 +97,7 @@ margin_left = 648.0
 margin_right = 821.0
 margin_bottom = 64.0
 text = "Cancel"
-scene_to_load = "res://scenes/etc/title.tscn"
+scene_to_load = "res://starter_scenes/etc/title.tscn"
 
 [node name="OKBtn" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 6 )]
 margin_left = 861.0
@@ -105,7 +105,7 @@ margin_right = 944.0
 margin_bottom = 64.0
 text = "OK"
 script = ExtResource( 7 )
-scene_to_load = "res://scenes/etc/title.tscn"
+scene_to_load = "res://starter_scenes/etc/title.tscn"
 saving_node = NodePath("../../../..")
 
 [connection signal="help_message_changed" from="MarginContainer/VBoxContainer/SettingsUI" to="." method="_on_SettingsUI_help_message_changed"]

@@ -3,7 +3,7 @@ extends ScrollContainer
 signal remap_started()
 signal remap_ended()
 
-const ACTION_BINDING_CATEGORY_UI = preload("res://scenes/ui/settings/action_binding_category_ui.tscn")
+const ACTION_BINDING_CATEGORY_UI = preload("res://starter_scenes/ui/settings/action_binding_category_ui.tscn")
 
 onready var _mouse_settings_ui = $ControlSettingsCategoryContainer/MouseSettingsUI
 onready var _input_remap_dlg:InputRemapDialog = $ControlSettingsCategoryContainer/InputRemapDialog

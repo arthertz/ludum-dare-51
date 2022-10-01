@@ -1,7 +1,7 @@
 class_name InputSettingsActionWrapper
 extends Reference
 
-var INVALID_ACTION_BINDING_THEME = preload("res://assets/themes/invalid_action_binding.tres")
+var INVALID_ACTION_BINDING_THEME = preload("res://starter_assets/themes/invalid_action_binding.tres")
 
 
 var input_settings_action: InputSettingsAction

@@ -2,7 +2,7 @@ extends Node
 
 signal input_settings_updated()
 
-const INPUT_MAP_SETTING_CFG_FILE_PATH = "res://assets/data/input_map_setting_cfg.json"
+const INPUT_MAP_SETTING_CFG_FILE_PATH = "res://starter_assets/data/input_map_setting_cfg.json"
 const BINDINGS_TYPE_TO_TYPE_NAME := {
 	"key": "InputEventKey",
 	"pad": "InputEventJoypadButton",

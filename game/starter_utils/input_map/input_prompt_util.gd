@@ -2,10 +2,10 @@ class_name InputPromptUtil
 extends Object
 
 const PROMPT_REGEX = "%%prompt:(?<input_type>\\w+):(?<action_name>\\w+)%%"
-const KEY_MOUSE_PROMPT_IMAGE_FILE_PATH = "res://assets/images/ui/input_prompts/xelu_free_keyboardcontroller_prompts_pack/Keyboard & Mouse/Light/%s_Key_Light.png"
-const PAD_PROMPT_IMAGE_FILE_PATH = "res://assets/images/ui/input_prompts/xelu_free_keyboardcontroller_prompts_pack/Others/Xbox 360/360_%s.png"
-const SMALL_KEY_MOUSE_PROMPT_IMAGE_FILE_PATH = "res://assets/images/ui/input_prompts/xelu_free_keyboardcontroller_prompts_pack/Keyboard & Mouse/Light/small_%s_Key_Light.png"
-const SMALL_PAD_PROMPT_IMAGE_FILE_PATH = "res://assets/images/ui/input_prompts/xelu_free_keyboardcontroller_prompts_pack/Others/Xbox 360/small_360_%s.png"
+const KEY_MOUSE_PROMPT_IMAGE_FILE_PATH = "res://starter_assets/images/ui/input_prompts/xelu_free_keyboardcontroller_prompts_pack/Keyboard & Mouse/Light/%s_Key_Light.png"
+const PAD_PROMPT_IMAGE_FILE_PATH = "res://starter_assets/images/ui/input_prompts/xelu_free_keyboardcontroller_prompts_pack/Others/Xbox 360/360_%s.png"
+const SMALL_KEY_MOUSE_PROMPT_IMAGE_FILE_PATH = "res://starter_assets/images/ui/input_prompts/xelu_free_keyboardcontroller_prompts_pack/Keyboard & Mouse/Light/small_%s_Key_Light.png"
+const SMALL_PAD_PROMPT_IMAGE_FILE_PATH = "res://starter_assets/images/ui/input_prompts/xelu_free_keyboardcontroller_prompts_pack/Others/Xbox 360/small_360_%s.png"
 
 const JOY_BUTTON_IMG_SUFIX := [
 	"A",
