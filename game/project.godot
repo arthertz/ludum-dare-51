@@ -80,8 +80,9 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Godot Project Starter"
-run/main_scene="res://starter_scenes/etc/title.tscn"
+config/name="LD51"
+config/description="Jam Slam Ludum Dare #51 Hell Yeah!"
+run/main_scene="res://scenes/Sandbox.tscn"
 config/icon="res://icon.png"
 
 [autoload]

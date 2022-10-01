@@ -70,5 +70,5 @@ margin_left = 831.0
 margin_right = 944.0
 margin_bottom = 64.0
 text = "Play"
-scene_to_load = "res://starter_scenes/etc/title.tscn"
+scene_to_load = "res://scenes/Sandbox.tscn"
 grab_focus_on_start = true
