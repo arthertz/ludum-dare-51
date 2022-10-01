@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/WillpowerBar.gd" type="Script" id=1]
+
+[node name="WillpowerBar" type="ColorRect"]
+margin_right = 88.306
+margin_bottom = 23.551
+rect_min_size = Vector2( 2.873, 0 )
+size_flags_vertical = 11
+color = Color( 0.184314, 0, 0, 1 )
+script = ExtResource( 1 )
+full = Color( 0, 0.745098, 0.858824, 1 )
+empty = Color( 0, 0.431373, 0.541176, 1 )
