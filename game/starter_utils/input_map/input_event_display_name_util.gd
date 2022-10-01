@@ -3,15 +3,15 @@ extends Object
 
 const MOUSE_BUTTON_TEXT := [
 	"Invalid!",
-	"Left Button",
-	"Right Button",
-	"Middle Button",
-	"Wheel Up",
-	"Wheel Down",
-	"Wheel Left",
-	"Wheel Right",
-	"X Button 1",
-	"X Button 2",
+	"Left Button (Invalid)",
+	"Right Button (Invalid)",
+	"Middle Button (Invalid)",
+	"Wheel Up (Invalid)",
+	"Wheel Down (Invalid)",
+	"Wheel Left (Invalid)",
+	"Wheel Right (Invalid)",
+	"X Button 1 (Invalid)",
+	"X Button 2 (Invalid)",
 ]
 
 

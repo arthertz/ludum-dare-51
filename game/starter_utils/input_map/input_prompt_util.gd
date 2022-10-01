@@ -81,7 +81,8 @@ static func replace_input_prompts(s: String, small: bool = false) -> String:
 			printerr("InputPromptUtil: did not find proper prompt in string??  skipping.")
 			continue
 		var input_event = _get_action_input(m.strings[1], m.strings[2])
-		if input_event == null:
+		if input_event == null or input_event is InputEventMouseButton:
+			# DON'T allow the player to rebind their mouse buttons... lol
 			continue
 		var image_path := get_input_event_image_file_path(input_event, small)
 		if !image_path.empty():
