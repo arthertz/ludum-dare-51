@@ -42,11 +42,9 @@ func place_characters() -> void:
 	for i in range(5):
 		var new_character = load("res://scenes/CrewCivilian.tscn")
 		var new_character_scene = new_character.instance()
-		add_child(new_character_scene)
-		# init after adding as child of the level
-		new_character_scene.ready_character(self, true)
+		$Navigation2D.add_child(new_character_scene)
 		# store the character scene reference in the level character array
-		crew_civilians.push_back(new_character_scene)
+		crew_civilians.append(new_character_scene)
 
 func place_doors() -> void:
 	pass
@@ -74,22 +72,8 @@ func _draw() -> void:
 	
 	for crew_spawn in crew_spawns:
 		draw_character(crew_spawn)
-		
-	for door in doors:
-		if door and is_instance_valid(door) and door.is_inside_tree():
-			if door.nav_obstacle.estimate_radius:
-				draw_circle(door.global_position, door.collision_radius, Color(0.5, 0.6, 0.4, 1.0))
-			else:
-				draw_circle(door.global_position, door.obstacle_nav_radius, Color(0.5, 0.6, 0.4, 1.0))
-			
-func create_lesser_spawn() -> void:
-	var new_spawn = load("res://scenes/LesserSpawn.tscn")
-	var new_spawn_scene = new_spawn.instance()
-	add_child(new_spawn_scene)
-	# init after adding as child of the level
-	new_spawn_scene.init_character(self, true)
-	# store the character scene reference in the level character array
-	lesser_spawns.push_back(new_spawn_scene)
 
+func create_lesser_spawn() -> void:
+	pass
 func draw_character(character : KinematicBody2D) -> void:
 	pass
