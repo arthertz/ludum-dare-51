@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="EveryTenSeconds" type="Timer"]
+unique_name_in_owner = true
+wait_time = 2.0
+autostart = true

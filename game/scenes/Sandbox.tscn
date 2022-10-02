@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://scenes/MouseMover.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/Main.gd" type="Script" id=4]
 [ext_resource path="res://assets/GUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/kenney_patternpack/Tilesheet/patternPack_tilesheet.png" type="Texture" id=6]
+[ext_resource path="res://assets/EveryTenSeconds.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/CrewCivilian.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/MonsterCharacter.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/Level.gd" type="Script" id=13]
@@ -277,9 +278,5 @@ tile_data = PoolIntArray( -327689, 4, 0, -327688, 4, 0, -327687, 4, 0, -327686, 
 
 [node name="CrewCivilian" parent="Level/Navigation2D" instance=ExtResource( 8 )]
 path_to_monster = NodePath("../MonsterCharacter")
-[node name="Sprite" type="Sprite" parent="Level/Locker"]
 
-[node name="EveryTenSeconds" type="Timer" parent="Level"]
-unique_name_in_owner = true
-wait_time = 2.0
-autostart = true
+[node name="EveryTenSeconds" parent="Level" instance=ExtResource( 7 )]

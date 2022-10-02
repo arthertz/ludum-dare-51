@@ -82,7 +82,7 @@ _global_script_class_icons={
 
 config/name="LD51"
 config/description="Jam Slam Ludum Dare #51 Hell Yeah!"
-run/main_scene="res://scenes/Sandbox.tscn"
+run/main_scene="res://scenes/Sandbox_Navmesh.tscn"
 config/icon="res://icon.png"
 
 [autoload]
