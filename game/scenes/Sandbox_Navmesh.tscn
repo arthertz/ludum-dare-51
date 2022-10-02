@@ -227,13 +227,13 @@ outlines = [ PoolVector2Array( 256, 256, 0, 256, 0, 0, 256, 0 ) ]
 10/z_index = 0
 
 [node name="Main" type="Node2D"]
-position = Vector2( -142, -71 )
 script = ExtResource( 4 )
 
 [node name="MouseMover" type="Sprite" parent="."]
 modulate = Color( 0.996078, 0.215686, 0.215686, 1 )
 position = Vector2( -3.05176e-05, 0 )
 z_index = 1
+texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="MouseMover"]
@@ -254,13 +254,12 @@ script = ExtResource( 3 )
 target_path = NodePath("..")
 
 [node name="UI Canvas" type="CanvasLayer" parent="."]
-layer = 5
 
-[node name="Cards" parent="UI Canvas" instance=ExtResource( 5 )]
-mouse_filter = 2
+[node name="GUI" parent="UI Canvas" instance=ExtResource( 5 )]
+margin_right = 361.0
+margin_bottom = 120.0
 
 [node name="Level" type="Node2D" parent="."]
-unique_name_in_owner = true
 script = ExtResource( 13 )
 
 [node name="Navigation2D" type="Navigation2D" parent="Level"]
@@ -277,9 +276,3 @@ tile_data = PoolIntArray( -327689, 4, 0, -327688, 4, 0, -327687, 4, 0, -327686, 
 
 [node name="CrewCivilian" parent="Level/Navigation2D" instance=ExtResource( 8 )]
 path_to_monster = NodePath("../MonsterCharacter")
-[node name="Sprite" type="Sprite" parent="Level/Locker"]
-
-[node name="EveryTenSeconds" type="Timer" parent="Level"]
-unique_name_in_owner = true
-wait_time = 2.0
-autostart = true

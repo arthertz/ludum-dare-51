@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/LesserSpawn.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=15]
+
+[node name="LesserSpawn" type="KinematicBody2D"]
+position = Vector2( 299, 73 )
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 15 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

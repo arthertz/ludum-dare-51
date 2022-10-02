@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="Locker" type="Node2D"]
+position = Vector2( -40, -197 )
+
+[node name="Sprite" type="Sprite" parent="."]

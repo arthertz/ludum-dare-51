@@ -1,9 +1,10 @@
 extends Node2D
 
-var crew_guard = []
+var crew_guards = []
 var crew_civilians = []
 var lesser_spawns = []
 var crew_spawns = []
+var doors = []
 
 var level_nav_map
 var level_tile_map : TileMap
@@ -77,10 +78,12 @@ func set_max_willpower(x : int) -> void:
 	emit_signal("willpower_max_updated", _willpower_count_max)
 
 func place_characters() -> void:
-	for child_node in get_children():
-		if child_node is KinematicBody2D:
-			if child_node.has_method("ready_character"):
-				child_node.ready_character(self, false)
+	for i in range(5):
+		var new_character = load("res://scenes/CrewCivilian.tscn")
+		var new_character_scene = new_character.instance()
+		$Navigation2D.add_child(new_character_scene)
+		# store the character scene reference in the level character array
+		crew_civilians.append(new_character_scene)
 
 func place_doors() -> void:
 	pass
@@ -89,4 +92,27 @@ func place_alarms() -> void:
 	pass
 	
 func place_lockers() -> void:
+	pass
+
+func _process(_delta : float) -> void:
+	update()
+	#create
+	
+func _draw() -> void:
+	pass
+	for guard in crew_guards:
+		draw_character(guard)
+	
+	for civilian in crew_civilians:
+		draw_character(civilian)
+	
+	for lesser_spawn in lesser_spawns:
+		draw_character(lesser_spawn)
+	
+	for crew_spawn in crew_spawns:
+		draw_character(crew_spawn)
+
+func create_lesser_spawn() -> void:
+	pass
+func draw_character(character : KinematicBody2D) -> void:
 	pass
