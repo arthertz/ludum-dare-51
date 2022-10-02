@@ -41,4 +41,4 @@ func _destroy_bar(i):
 func _draw_willpower(wp : int) -> void:
 	var l = len(max_willpower)
 	for i in range(len(max_willpower)):
-		max_willpower[i].set_active(l < wp + i + 1)
+		max_willpower[i].set_active(l- (i - 1) < wp)

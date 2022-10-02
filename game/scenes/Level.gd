@@ -42,12 +42,12 @@ func _ready() -> void:
 	add_child(will_countdown)
 	add_child(lesser_spawn_creation_timer)
 	
+	set_willpower(starting_willpower)
+	
 	place_characters()
 	place_doors()
 	place_alarms()
 	place_lockers()
-	
-	set_max_willpower(5)
 	
 func increment_willpower() -> void:
 	set_willpower(willpower_count + 1)
