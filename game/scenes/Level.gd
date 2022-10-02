@@ -20,8 +20,6 @@ export var crew_spawn_count_max : int = 10
 var cards = 0
 export(int) var max_cards = 5
 
-var will_countdown : Timer = Timer.new()
-var will_timer_max : float = 0
 var willpower_count : int = 0
 export var starting_willpower : int = 3
 var _willpower_count_max : int = 0
@@ -38,12 +36,10 @@ func _ready() -> void:
 	level_tile_map = $TileMap
 	level_nav_map = get_world_2d().get_navigation_map()
 	
-	will_countdown.start(will_timer_max)
 	lesser_spawn_creation_timer.start(lesser_spawn_timer_max)
-	add_child(will_countdown)
 	add_child(lesser_spawn_creation_timer)
 	
-	set_willpower(starting_willpower)
+	set_max_willpower(starting_willpower)
 	
 	place_characters()
 	place_doors()

@@ -25,12 +25,13 @@ func _on_set_willpower_max(new_val : int) -> void:
 	elif new_val < l:
 		print("Destroying bars")
 		for i in range( l - new_val):
-			_destroy_bar(l - i - 1)
+			_destroy_bar(-i)
 
 func _create_bar():
 	var new_card = willpower.instance()
 	$VBoxContainer.add_child(new_card)
 	max_willpower.append(new_card)
+	new_card.set_active(false)
 	print("Created new willpower bar. Max will is %s" % len (max_willpower))
 
 func _destroy_bar(i):
@@ -41,4 +42,4 @@ func _destroy_bar(i):
 func _draw_willpower(wp : int) -> void:
 	var l = len(max_willpower)
 	for i in range(len(max_willpower)):
-		max_willpower[i].set_active(l- (i - 1) < wp)
+		max_willpower[-i].set_active(i < wp)

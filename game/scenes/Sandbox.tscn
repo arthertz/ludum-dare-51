@@ -257,8 +257,7 @@ target_path = NodePath("..")
 [node name="UI Canvas" type="CanvasLayer" parent="."]
 layer = 5
 
-[node name="Cards" parent="UI Canvas" instance=ExtResource( 5 )]
-mouse_filter = 2
+[node name="HUD" parent="UI Canvas" instance=ExtResource( 5 )]
 
 [node name="Level" type="Node2D" parent="."]
 unique_name_in_owner = true

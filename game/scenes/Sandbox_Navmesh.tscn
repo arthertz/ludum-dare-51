@@ -257,9 +257,10 @@ target_path = NodePath("..")
 [node name="UI Canvas" type="CanvasLayer" parent="."]
 
 [node name="GUI" parent="UI Canvas" instance=ExtResource( 5 )]
-margin_right = 361.0
-margin_bottom = 120.0
 mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Level" type="Node2D" parent="."]
 unique_name_in_owner = true

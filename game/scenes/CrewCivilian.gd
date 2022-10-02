@@ -17,11 +17,9 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if nav_agent.is_navigation_finished():
-		print("finished")
 		return
 		
 	var direction := global_position.direction_to(nav_agent.get_next_location())
-	print(direction)
 	var desired_velocity := direction * max_speed
 	var steering := (desired_velocity - velocity) * delta * 4.0
 	velocity += steering
