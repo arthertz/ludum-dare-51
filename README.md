@@ -12,5 +12,7 @@ Christian Caldwell
 
 Nat Burke
 
+James Shipp
+
 ### Starter Assets
 Godot Starter Project by Jason Lothamer
